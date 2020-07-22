@@ -1,4 +1,4 @@
-import { Lista } from './../models/lista.model';
+import { Lista } from '../models/lista.model';
 import { Injectable } from '@angular/core';
 
 @Injectable({

@@ -1,5 +1,5 @@
 import { AlertController, IonList } from '@ionic/angular';
-import { DeseoService } from './../../services/deseo.service';
+import { DeseoService } from '../../_services/deseo.service';
 import { Router } from '@angular/router';
 import { Lista } from './../../models/lista.model';
 import { Component, OnInit, Input, ViewChild } from '@angular/core';

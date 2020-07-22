@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DeseoService } from 'src/app/services/deseo.service';
+import { DeseoService } from 'src/app/_services/deseo.service';
 
 @Component({
   selector: 'app-tab2',

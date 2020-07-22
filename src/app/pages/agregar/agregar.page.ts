@@ -1,8 +1,9 @@
 import { ListaItem } from './../../models/lista-item.model';
-import { DeseoService } from 'src/app/services/deseo.service';
+import { DeseoService } from 'src/app/_services/deseo.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Lista } from 'src/app/models/lista.model';
+import { LoginService } from 'src/app/_services/login.service';
 
 @Component({
   selector: 'app-agregar',
@@ -15,7 +16,8 @@ export class AgregarPage implements OnInit {
   nombreItem: string;
 
   constructor(private deseoService: DeseoService,
-              private route: ActivatedRoute) {
+              private route: ActivatedRoute,
+              private loginService: LoginService) {
 
     const idLista = this.route.snapshot.paramMap.get('idLista');
     

@@ -38,6 +38,21 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'tab3',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+          },
+          {
+            path: 'agregar/:idLista',
+            loadChildren: () =>
+              import('../agregar/agregar.module').then(m => m.AgregarPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
