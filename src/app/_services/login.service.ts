@@ -10,8 +10,12 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
+  Login() {
+    //return this.http.post<any>(`https://localhost:5001/WeatherForecast`);
+  }
+
   GetData(): Observable<any> {
     //return this.http.get<any>(`${environment.apiLocal}/WeatherForecast/`);
-    return this.http.get<any>(`https://localhost:5001/api/WeatherForecast`);
+    return this.http.get<any>(`https://localhost:5001/WeatherForecast`);
   }
 }

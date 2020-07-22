@@ -1,0 +1,23 @@
+.content{
+    //--background: url(https://static.vecteezy.com/system/resources/previews/000/345/009/non_2x/abstract-tech-background-vector.jpg) 0 0/100% 100% no-repeat;
+    --ion-background-color: #ffd093;
+}
+
+ion-item{
+    --background: transparent;
+    color: black;
+}
+
+.input{
+    border: 1px white solid;
+    border-radius: 3px;
+    background-color: white;
+    padding-left: 10px !important; 
+}
+
+.btn-ingresar{
+    background-color: #EF7E67;;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+}
