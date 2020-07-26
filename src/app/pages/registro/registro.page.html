@@ -1,9 +1,59 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registro</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="content">
+  <ion-grid fixed>
+    
+    <ion-row style="margin-top: 5%;">
+      <ion-col size="12" style="text-align: center;">
+        <img src="../../../assets/brain-focus.png" style="width: 120px;">
+      </ion-col>
+    </ion-row>
+    
+    <ion-row style="margin-top: 10px;">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input class="input" [(ngModel)]="usuario.nombre" type="text" placeholder="Nombre"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
 
-<ion-content>
+    <ion-row style="margin-top: 10px;">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input class="input" [(ngModel)]="usuario.apellido" type="text" placeholder="Apellido"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
 
+    <ion-row style="margin-top: 10px;">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input class="input" [(ngModel)]="usuario.email" type="text" placeholder="Email"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="margin-top: 10px;">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input class="input" [(ngModel)]="usuario.contrasenia" type="password" placeholder="Contraseña"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="margin-top: 10px;">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input class="input" [(ngModel)]="confirmarContrasenia" type="password" placeholder="Confirmar contraseña"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="margin-top: 5vh;">
+      <ion-col size="12" style="padding-left: 5vw;padding-right: 5vw;">
+        <ion-button class="btn-ingresar" (click)="registrarUsuario()" expand="block" fill="clear" shape="round">
+          Aceptar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>
